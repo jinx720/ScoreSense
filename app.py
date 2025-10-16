@@ -5,9 +5,9 @@ import random
 import plotly.graph_objects as go
 
 # --- Load saved models ---
-clf = joblib.load(r"C:\Users\KIIT\Documents\ScoreSense\notebooks\models\clf.pkl")
-xgb_away = joblib.load(r"C:\Users\KIIT\Documents\ScoreSense\notebooks\models\xgb_away.pkl")
-xgb_home = joblib.load(r"C:\Users\KIIT\Documents\ScoreSense\notebooks\models\xgb_home.pkl")
+clf = joblib.load("notebooks/models/clf.pkl")
+xgb_away = joblib.load("notebooks/models/xgb_away.pkl")
+xgb_home = joblib.load("notebooks/models/xgb_home.pkl")
 
 # --- Load final processed DataFrame ---
 df = joblib.load("data/final_df.pkl")
